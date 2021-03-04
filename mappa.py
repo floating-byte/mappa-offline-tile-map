@@ -2,6 +2,15 @@ import math
 import requests
 import os
 
+path =  os.getcwd()+"/imgs/"
+
+try:
+    os.mkdir(path)
+except OSError:
+    print ("Creation of the directory %s failed" % path)
+else:
+    print ("Successfully created the directory %s " % path)
+
 def download(z):
 	x = 0
 	y = 0
